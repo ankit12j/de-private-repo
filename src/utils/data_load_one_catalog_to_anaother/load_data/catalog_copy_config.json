@@ -1,0 +1,11 @@
+{
+  "description": "Unity Catalog (or Hive metastore) table copy: read each source table and overwrite the same schema.table in the target catalog. Each entry in tables must be exactly two parts: schema_name.table_name.",
+  "source_catalog": "ankit_dbx_ws_dev",
+  "target_catalog": "ankit_dbx_ws_qa",
+  "load_mode": "overwrite",
+  "format": "delta",
+  "tables": [
+    "dbo.error_log",
+    "dbo.test1"
+  ]
+}
